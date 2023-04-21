@@ -273,6 +273,7 @@ export class SignalClient {
           return;
         }
 
+        console.log("response:", resp);
         if (!this.isConnected) {
           let shouldProcessMessage = false;
           // handle join message only
