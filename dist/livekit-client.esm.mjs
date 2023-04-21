@@ -19661,6 +19661,7 @@ class SignalClient {
           livekitLogger.error("could not decode websocket message: ".concat(typeof ev.data));
           return;
         }
+        console.log("response:", resp);
         if (!this.isConnected) {
           let shouldProcessMessage = false;
           // handle join message only
